@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
 import HeaderCustom from '../components/header/header.component'
 import Footer from '../components/footer/footer.component'
 import styled from 'styled-components'
@@ -23,12 +24,11 @@ const Home = () => {
       });
   }
   return (
-    <div class=" h-screen max-h-screen w-full bg-stone-600">
+    <div class=" w-full">
 
       <Head>
         <title>CNG</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -36,31 +36,34 @@ const Home = () => {
 
 
 
+        
+      
+      
       <HeaderCustom />
+      
+      <div if="main_content_container" class="mx-auto max-w-7xl md:">
+      
+        <div id="main_content" class=" my-20 grid grid-cols-1 border-solid border-8 border-black h-auto md:grid-cols-2">
 
-      <div if="main_content_container" class="mx-auto">
-        <div id="main_content" class="md:grid-cols-2 md: w-fit mx-auto my-20  grid grid-cols-1  border-solid border-8 border-black h-auto">
-
-          <div id="left_container" class="bg-[url('../public/chuck_bg.png')]">
+          <div id="left_container" class=" bg-[url('../public/chuck_bg.png')]">
             <button onClick={handleClick} >
               <Image class="p-4"
                 onMouseEnter={() => setImageUrl('https://iili.io/HGlQPUu.png')}
                 onMouseLeave={() => setImageUrl('https://iili.io/HGlQ4f9.png')}
                 onClick={() => setImageUrl('https://iili.io/HGlQ6le.png')}
-                width="512" height="300" alt="Chuck Image"
+                width="672" height="400" alt="Chuck Image"
                 src={ImageUrl} />
             </button>
           </div>
 
-          <div id="right_container" class=" max-w-lg max-h-25">
-            <div id="joke_container" class="border-solid border-l-4 border-black w-400px p-5 h-full font-semibold font-monospace text-2xl align-middle text-black bg-white">
-              
+          <div id="right_container" class="">
+            <div id="joke_container" class="max-w-2xl min-h-25 border-solid border-l-4 border-black p-5 h-full font-semibold font-monospace text-2xl align-middle text-black bg-white">
                 <p>{Joke}</p>
-              
             </div>
           </div>
 
         </div>
+        
       </div>
       <Footer />
 

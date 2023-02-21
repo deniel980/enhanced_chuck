@@ -5,7 +5,7 @@ import Logo1 from '../../public/logo.svg';
 const HeaderCustom = () => {
     return (
         <div class="  md:w-full h-34 bg-black sticky flex top-0 justify-start">
-            <Link class="md:mx-7" href="https://www.wus.agency/"  target="_blank" >
+            <Link class="md:mx-10" href="https://www.wus.agency/"  target="_blank" >
                 <svg class=" h-44 h- w-44 fill-fuchsia-50" viewBox="0 0 99.7 64.9">
                     <path d="M94.2,5.5v54l-82.8-.4L6,5.5M99.7,0H0L.5,5.9,4.7,59.5l.4,5h5.1l84,.4h5.5V0Z"></path>
                     <path d="M28.3,31h-.1L26,51.5H17.7L13.4,13.1h5.9l3.2,30.3h.1l2.8-30.3h5.8l3,30.5h.1l3.1-30.5h5.3L38.4,51.5h-8Z"></path>
@@ -14,7 +14,7 @@ const HeaderCustom = () => {
                 </svg>
             </Link>
             <Link href="https://api.chucknorris.io/" target="_blanc">
-            <p class="my-7 mx-2  md:my-7 w-28 font-monospace text-4xl font-bold  text-zinc-50">CHUCK NORRIS GENERATOR</p>
+            <p class="my-7 mx-2  md:my-7 w-28 font-monospace text-4xl font-bold hover:text-yellow-500  text-zinc-50">CHUCK NORRIS GENERATOR</p>
             </Link>
 
 
