@@ -4,7 +4,7 @@ import Logo1 from '../../public/logo.svg';
 
 const HeaderCustom = () => {
     return (
-        <div class="  md:w-full h-34 bg-black sticky flex top-0 justify-start">
+        <div class=" z-50  md:w-full md:h-34 bg-black flex top-0 justify-start">
             <Link class="md:mx-10" href="https://www.wus.agency/"  target="_blank" >
                 <svg class=" h-44 h- w-44 fill-fuchsia-50 md:hover:fill-yellow-500" viewBox="0 0 99.7 64.9">
                     <path d="M94.2,5.5v54l-82.8-.4L6,5.5M99.7,0H0L.5,5.9,4.7,59.5l.4,5h5.1l84,.4h5.5V0Z"></path>

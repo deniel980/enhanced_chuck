@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import HeaderCustom from '../components/header/header.component'
 import Footer from '../components/footer/footer.component'
-import styled from 'styled-components'
+
 import { useState } from 'react'
 
 
@@ -12,7 +12,7 @@ const Home = () => {
 
   const [Joke, setJoke] = useState('');
   const [ImageUrl, setImageUrl] = useState('https://iili.io/HGlQ4f9.png');
-  const Button = styled.button``;
+ 
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -31,15 +31,12 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        
-      
-      
-      <HeaderCustom />
-      
-      <div if="main_content_container" class="mx-auto md:min-h-0 min-h-screen  md:max-w-7xl">
-      
-        <div id="main_content" class=" sticky top-44 md:my-20 grid grid-cols-1 border-solid border-8 border-black h-auto md:grid-cols-2">
 
+
+      <div id="main_content_container" class="mx-auto h-screen">
+        <HeaderCustom />
+    
+        <div id="main_content" class="mb-auto  mx-auto md:my-20 grid grid-cols-1 border-solid border-8 border-black h- md:grid-cols-2 md:max-w-7xl">
           <div id="left_container" class=" bg-[url('../public/chuck_bg.png')]">
             <button onClick={handleClick} >
               <Image class="p-4"
@@ -50,17 +47,16 @@ const Home = () => {
                 src={ImageUrl} />
             </button>
           </div>
-
           <div id="right_container" class="">
-            <div id="joke_container" class="md:border-l-4 max-w-2xl min-h-25 border-solid border-t-2 border-black p-5 h-full font-semibold font-monospace text-lg md:text-2xl align-middle text-black bg-white">
-                <p>{Joke}</p>
+            <div id="joke_container" class="md:border-l-4 max-w-2xl mb-24 border-solid border-t-2 border-black p-5 h-full font-semibold font-monospace text-lg md:text-2xl align-middle text-black bg-white">
+              <p>{Joke}</p>
             </div>
           </div>
-
         </div>
-        
+
+        <Footer />
       </div>
-      <Footer />
+
 
     </div>
   )
