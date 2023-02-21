@@ -48,7 +48,7 @@ const Home = () => {
             </button>
           </div>
           <div id="right_container" class="">
-            <div id="joke_container" class="md:border-l-4 max-w-2xl mb-24 border-solid border-t-2 border-black p-5 h-full font-semibold font-monospace text-lg md:text-2xl align-middle text-black bg-white">
+            <div id="joke_container" class="md:border-l-4 max-w-2xl mb-24 border-solid border-t-2 border-black p-5 overflow-hidden h-full font-semibold font-monospace text-lg md:text-2xl align-middle text-black bg-white">
               <p>{Joke}</p>
             </div>
           </div>

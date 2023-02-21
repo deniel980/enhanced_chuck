@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
+
 const VisiterCounter = () => {
 
 
     const [visitors, setVisitors] = useState(0);
+
+    
+   
 
     useEffect(() => {
         if (localStorage.getItem('visitors') === null) {
@@ -19,9 +23,7 @@ const VisiterCounter = () => {
             <p class="text-xl font-monospace font-bold font">Your visits: {visitors}</p>
             <div id="credentials" class="my-4">
                 <p class="text-xl font-monospace font-semi-bold font">&copy; Daniel Weiner</p>
-
             </div>
-
         </div>
     );
 
