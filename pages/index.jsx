@@ -10,7 +10,7 @@ import { useState } from 'react'
 const Home = () => {
 
   const [Joke, setJoke] = useState('');
-  const [ImageUrl, setImageUrl] = useState('../public/default_chuck.png');
+  const [ImageUrl, setImageUrl] = useState('https://iili.io/HGlQ4f9.png');
   const Button = styled.button``;
 
   const handleClick = (e) => {
@@ -38,9 +38,9 @@ const Home = () => {
           <div id="left_container" class="bg-[url('../public/chuck_bg.png')]">
             <button onClick={handleClick} >
               <Image class="p-4"
-                onMouseEnter={() => setImageUrl('../public/hover_chuck.png')}
-                onMouseLeave={() => setImageUrl('../public/default_chuck.png')}
-                onClick={() => setImageUrl('../public/clicked_chuck.png')}
+                onMouseEnter={() => setImageUrl('https://iili.io/HGlQPUu.png')}
+                onMouseLeave={() => setImageUrl('https://iili.io/HGlQ4f9.png')}
+                onClick={() => setImageUrl('https://iili.io/HGlQ6le.png')}
                 width="512" height="512" alt="Chuck Image"
                 src={ImageUrl} />
             </button>

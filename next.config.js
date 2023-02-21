@@ -10,8 +10,17 @@ const nextConfig = {
         port: '',
         pathname: '/xmWhkH2/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'iili.io',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 }
 
 module.exports = nextConfig
+
+
+
