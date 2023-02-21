@@ -36,9 +36,9 @@ const Home = () => {
       
       <HeaderCustom />
       
-      <div if="main_content_container" class="mx-auto  md:max-w-7xl">
+      <div if="main_content_container" class="mx-auto md:min-h-0 min-h-screen  md:max-w-7xl">
       
-        <div id="main_content" class=" md:my-20 grid grid-cols-1 border-solid border-8 border-black h-auto md:grid-cols-2">
+        <div id="main_content" class=" sticky top-44 md:my-20 grid grid-cols-1 border-solid border-8 border-black h-auto md:grid-cols-2">
 
           <div id="left_container" class=" bg-[url('../public/chuck_bg.png')]">
             <button onClick={handleClick} >
@@ -58,9 +58,9 @@ const Home = () => {
           </div>
 
         </div>
-        <Footer />
+        
       </div>
-      
+      <Footer />
 
     </div>
   )
