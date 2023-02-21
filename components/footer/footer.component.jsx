@@ -4,7 +4,7 @@ const Footer = () => {
     
         return (
     
-            <div class="md:w-full h-28 bg-black flex absolute bottom-0">
+            <div class="w-full h-28 bg-black flex fixed bottom-0">
     
                 <div>
     

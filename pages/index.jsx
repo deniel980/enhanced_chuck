@@ -43,7 +43,7 @@ const Home = () => {
       
       <div if="main_content_container" class="mx-auto max-w-7xl md:">
       
-        <div id="main_content" class=" my-20 grid grid-cols-1 border-solid border-8 border-black h-auto md:grid-cols-2">
+        <div id="main_content" class=" md:my-20 grid grid-cols-1 border-solid border-8 border-black h-auto md:grid-cols-2">
 
           <div id="left_container" class=" bg-[url('../public/chuck_bg.png')]">
             <button onClick={handleClick} >
@@ -57,7 +57,7 @@ const Home = () => {
           </div>
 
           <div id="right_container" class="">
-            <div id="joke_container" class="max-w-2xl min-h-25 border-solid border-l-4 border-black p-5 h-full font-semibold font-monospace text-2xl align-middle text-black bg-white">
+            <div id="joke_container" class="md:border-l-4 max-w-2xl min-h-25 border-solid border-t-2 border-black p-5 h-full font-semibold font-monospace text-2xl align-middle text-black bg-white">
                 <p>{Joke}</p>
             </div>
           </div>
