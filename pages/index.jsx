@@ -36,7 +36,7 @@ const Home = () => {
       <div id="main_content_container" class="mx-auto h-screen">
         <HeaderCustom />
     
-        <div id="main_content" class="mb-auto  mx-auto md:my-20 grid grid-cols-1 border-solid border-8 border-black h- md:grid-cols-2 md:max-w-7xl">
+        <div id="main_content" class="mb-auto mx-auto md:my-20 grid grid-cols-1 border-solid border-8 border-black h- md:grid-cols-2 md:max-w-7xl">
           <div id="left_container" class=" bg-[url('../public/chuck_bg.png')]">
             <button onClick={handleClick} >
               <Image class="p-4"

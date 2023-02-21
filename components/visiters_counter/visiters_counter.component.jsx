@@ -17,16 +17,10 @@ const VisiterCounter = () => {
     return (
         <div>
             <p class="text-xl font-monospace font-bold font">Your visits: {visitors}</p>
-            <div id="credentials">
+            <div id="credentials" class="my-4">
                 <p class="text-xl font-monospace font-semi-bold font">&copy; Daniel Weiner</p>
 
             </div>
-            
-
-
-
-
-
 
         </div>
     );
