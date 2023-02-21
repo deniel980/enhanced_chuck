@@ -18,7 +18,7 @@ const VisiterCounter = () => {
         <div>
             <p class="text-xl font-monospace font-bold font">Your visits: {visitors}</p>
             <div id="credentials">
-                <p class="text-xl font-monospace font-semi-bold font">&#169 Daniel Weiner</p>
+                <p class="text-xl font-monospace font-semi-bold font">&copy; Daniel Weiner</p>
 
             </div>
             
