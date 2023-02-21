@@ -24,24 +24,19 @@ const Home = () => {
       });
   }
   return (
-    <div class=" w-full">
+    <div class=" w-full max-w-full">
 
       <Head>
         <title>CNG</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-
-
-
-
         
       
       
       <HeaderCustom />
       
-      <div if="main_content_container" class="mx-auto max-w-7xl md:">
+      <div if="main_content_container" class="mx-auto  md:max-w-7xl">
       
         <div id="main_content" class=" md:my-20 grid grid-cols-1 border-solid border-8 border-black h-auto md:grid-cols-2">
 
@@ -57,15 +52,15 @@ const Home = () => {
           </div>
 
           <div id="right_container" class="">
-            <div id="joke_container" class="md:border-l-4 max-w-2xl min-h-25 border-solid border-t-2 border-black p-5 h-full font-semibold font-monospace text-2xl align-middle text-black bg-white">
+            <div id="joke_container" class="md:border-l-4 max-w-2xl min-h-25 border-solid border-t-2 border-black p-5 h-full font-semibold font-monospace text-lg md:text-2xl align-middle text-black bg-white">
                 <p>{Joke}</p>
             </div>
           </div>
 
         </div>
-        
+        <Footer />
       </div>
-      <Footer />
+      
 
     </div>
   )
