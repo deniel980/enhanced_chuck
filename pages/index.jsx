@@ -28,10 +28,16 @@ const Home = () => {
       <Head>
         <title>CNG</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
+
+
+
       <HeaderCustom />
+
       <div if="main_content_container" class="mx-auto">
         <div id="main_content" class="md:grid-cols-2 md: w-fit mx-auto my-20  grid grid-cols-1  border-solid border-8 border-black h-auto">
 

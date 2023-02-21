@@ -8,7 +8,7 @@ module.exports = {
       
     },
     fontFamily: {
-      monospace: ['monospace']
+      monospace: ['Roboto Mono','monospace'],
     }
   },
   plugins: [],
