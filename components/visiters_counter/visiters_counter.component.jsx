@@ -30,21 +30,16 @@ const VisiterCounter = () => {
     //     }
     // }
     
-    function updateCounter(type) {
+    // function updateCounter(type) {
     
-      fetch('http://127.0.0.1:3002/api?'+type) // Dynamic request with URL parameter
-        .then(res => res.json())
-        .then(data => {
-          setPageviews(data.pageviews) ; // Display pageviews to user
-          setVisits(data.visits); // Display visits to user
-        })
-    }
+    //   fetch('http://127.0.0.1:3002/api?'+type) // Dynamic request with URL parameter
+    //     .then(res => res.json())
+    //     .then(data => {
+    //       setPageviews(data.pageviews) ; // Display pageviews to user
+    //       setVisits(data.visits); // Display visits to user
+    //     })
+    // }
 
-
-
-    
-    // 'visit' item persists in storage for the remainder of the user session
-    // This is used to determine if the user is visiting for the first time or not
 
     return (
         <div>

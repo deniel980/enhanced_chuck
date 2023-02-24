@@ -1,9 +1,0 @@
-
-    useEffect(() => {
-        if (localStorage.getItem('visitors') === null) {
-            localStorage.setItem('visitors', 1);
-        } else {
-            localStorage.setItem('visitors', parseInt(localStorage.getItem('visitors')) + 1);
-        }
-        setVisitors(localStorage.getItem('visitors'));
-    }, []);
