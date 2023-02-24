@@ -38,7 +38,7 @@ const Home = () => {
         <div id="main_content" class="w-full h-fit md:w-[1500px] md:h-[480px] mb-auto mx-auto grid grid-cols-1 md:grid-cols-2 border-solid border-8 border-black ">
          
             <button id="image_container" onClick={handleClick} class="p-1 pt-2 relative md:active:top-1 bg-cover bg-no-repeat bg-[url('../public/chuck_bg.png')] overflow-hidden">
-              <div class="w-full h-[300px] md:h-full bg-contain bg-no-repeat	 bg-[url('https://iili.io/HGlQ4f9.png')] hover:bg-[url('https://iili.io/HGlQPUu.png')] active:bg-[url('https://iili.io/HGlQ6le.png')]">
+              <div class="w-full h-[280px] md:h-full bg-contain bg-no-repeat	 bg-[url('https://iili.io/HGlQ4f9.png')] hover:bg-[url('https://iili.io/HGlQPUu.png')] active:bg-[url('https://iili.io/HGlQ6le.png')]">
 
               </div>
               {/* <Image class="p-1"
