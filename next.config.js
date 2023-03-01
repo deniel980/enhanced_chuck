@@ -6,12 +6,6 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'ibb.co',
-        port: '',
-        pathname: '/xmWhkH2/**',
-      },
-      {
-        protocol: 'https',
         hostname: 'iili.io',
         port: '',
         pathname: '/**',

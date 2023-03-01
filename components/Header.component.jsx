@@ -1,12 +1,10 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import Logo1 from '../../public/logo.svg';
 
 const HeaderCustom = () => {
     return (
-        <div class=" z-50  md:w-full md:h-34 bg-black flex top-0 justify-start">
-            <Link class="md:mx-10" href="https://www.wus.agency/"  target="_blank" >
-                <svg class=" h-44 h- w-44 fill-fuchsia-50 md:hover:fill-yellow-500" viewBox="0 0 99.7 64.9">
+        <div className=" z-50  md:w-full md:h-34 bg-black flex top-0 justify-start">
+            <Link className="md:mx-10" href="https://www.wus.agency/"  target="_blank" >
+                <svg className=" h-44 h- w-44 fill-fuchsia-50 md:hover:fill-yellow-500" viewBox="0 0 99.7 64.9">
                     <path d="M94.2,5.5v54l-82.8-.4L6,5.5M99.7,0H0L.5,5.9,4.7,59.5l.4,5h5.1l84,.4h5.5V0Z"></path>
                     <path d="M28.3,31h-.1L26,51.5H17.7L13.4,13.1h5.9l3.2,30.3h.1l2.8-30.3h5.8l3,30.5h.1l3.1-30.5h5.3L38.4,51.5h-8Z"></path>
                     <path d="M49.9,31.3v-.1c-2.9-1.2-4.2-3.7-4.2-7.8v-.7c0-6.1,3-9.5,9-9.5h6.9v5.5H54.8c-1.9,0-3.1,1-3.1,3.7v2.4c0,3.1,1.4,4.1,3.6,4.1h2.6V24.6h6v4.3h1.6v5.5H63.9V47a11.633,11.633,0,0,0,.7,4.7H58.5a8.6,8.6,0,0,1-.5-3h-.1a5.632,5.632,0,0,1-5.5,3.5c-4.4,0-6.7-3.1-6.7-8.8V39.5C45.8,35.4,47,32.6,49.9,31.3Zm5,15.1c1.8,0,3-.9,3.1-3.3V34.2H55.7c-2.7,0-3.9,1.3-3.9,4.9v3.6C51.8,45.4,53,46.4,54.9,46.4Z"></path>
@@ -14,11 +12,8 @@ const HeaderCustom = () => {
                 </svg>
             </Link>
             <Link href="https://api.chucknorris.io/" target="_blanc">
-            <p class="my-7 mx-2  md:my-7 w-28 font-monospace text-4xl font-bold hover:text-yellow-500  text-zinc-50">CHUCK NORRIS GENERATOR</p>
+            <p className="my-7 mx-2  md:my-7 w-28 font-monospace text-4xl font-bold hover:text-yellow-500  text-zinc-50">CHUCK NORRIS GENERATOR</p>
             </Link>
-
-
-
         </div>
     )
 }
