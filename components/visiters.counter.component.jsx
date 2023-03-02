@@ -20,7 +20,7 @@ const VisiterCounter = () => {
 
   //trigger handler function from update.js file in api folder if the user is a new visitor
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!localStorage.getItem("visited")) {
       update();
       getCount();
