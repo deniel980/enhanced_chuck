@@ -4,7 +4,6 @@ import HeaderCustom from "../components/Header.component";
 import Footer from "../components/Footer.component";
 import JokeGenerator from "components/Joke.generator.component";
 
-
 const Home = () => {
   return (
     <div className=" w-full max-w-full">

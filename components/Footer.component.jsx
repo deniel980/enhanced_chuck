@@ -1,4 +1,4 @@
-import VisiterCounter from "components/visiters_counter/visiters_counter.component";
+import VisiterCounter from "components/visiters_counter.component";
 
 const Footer = () => {
   return (
