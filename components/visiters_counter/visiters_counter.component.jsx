@@ -3,18 +3,32 @@ import React, { useState, useEffect } from "react";
 const VisiterCounter = () => {
   const [visitors, setVisitors] = useState(0);
 
-  //trigger handler function from hello.js file in api folder if the user is a new visitor
+  const getCount = async () => {
+    const res = await fetch("api/get_login_count");
+    const data = await res.json();
+    const count = data.LOGINCOUNT;
+    console.log(count);
+    setVisitors(count);
+  };
+
+  const update = async () => {
+    const res = await fetch("api/update_login_count");
+    const data = await res.json();
+    const count = data.LOGINCOUNT;
+    console.log(count);
+  };
+
+  //trigger handler function from update.js file in api folder if the user is a new visitor
   useEffect(() => {
     if (!localStorage.getItem("visited")) {
+      console.log("new visitor");
       localStorage.setItem("visited", 1);
-      const hello = async () => {
-        const res = await fetch("api/hello");
-        const data = await res.json();
-        console.log(data);
-        setVisitors(10);
-      };
-      hello();
-    } else console.log("not a new visitor");
+      update();
+      getCount();
+    } else {
+      console.log("not a new visitor");
+      getCount();
+    }
   }, []);
 
   return (
